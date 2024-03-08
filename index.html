@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Japanese Recipe Generator</title>
   </head>
@@ -18,7 +19,7 @@
         <h1>Easy Japanese recipes</h1>
       </header>
       <main>
-        <form>
+        <form id="recipe-generator">
           <input
             type="text"
             placeholder="Enter Ingredient..."
@@ -29,9 +30,9 @@
           />
           <input type="submit" class="submit-btn" />
         </form>
-        <div class="Recipe-result">Recipe</div>
+        <div class="Recipe-result" id="recipe"></div>
       </main>
-      <script src="src/index.js"></script>
+
       <footer>
         This AI project was coded by Kelsey Foster and is Open-sourced on
         <a href="https://github.com/04kelfos/ai-project" target="_blank"
@@ -45,5 +46,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
