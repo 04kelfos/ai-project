@@ -1,5 +1,4 @@
 function displayRecipe(response) {
-  console.log("recipe Generated");
   new Typewriter("#recipe", {
     strings: response.data.answer,
     autoStart: true,
@@ -19,8 +18,7 @@ function generateRecipe(event) {
 
   let recipeElement = document.querySelector("#recipe");
   recipeElement.classList.remove("hidden");
-  recipeElement.innerHTML = `<div class="generating">Generating your Japanese Recipe!</div`;
-  console.log("generating recipe");
+  recipeElement.innerHTML = `<div class="generating">🍴Generating your Japanese Recipe!</div`;
 
   axios.get(apiUrl).then(displayRecipe);
 }
