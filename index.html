@@ -20,19 +20,22 @@
         <h1>Easy Japanese recipes</h1>
       </header>
       <main>
-        <form id="recipe-generator">
-          <input
-            type="text"
-            placeholder="Enter Ingredient..."
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="Ingredients"
-          />
-          <input type="submit" class="submit-btn" />
-        </form>
-        <div class="Recipe-result" id="recipe"></div>
+        <div class="form-wrapper">
+          <form id="recipe-generator">
+            <input
+              type="text"
+              placeholder="Enter Ingredients you have..."
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="Ingredients"
+            />
+            <input type="submit" class="submit-btn" />
+          </form>
+          <div class="hint">Example: Rice, Eggs, Chicken</div>
+        </div>
+        <div class="Recipe-result hidden" id="recipe"></div>
       </main>
 
       <footer>
